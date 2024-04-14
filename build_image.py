@@ -577,7 +577,7 @@ def main():
     try:
         if (sys.platform == "win32"):
             subprocess.run(
-                cmd_linux,
+                cmd_windows,
                 check=True,
                 encoding='utf-8',
                 stdout=subprocess.DEVNULL,
@@ -587,7 +587,7 @@ def main():
             )
         else:
             subprocess.run(
-                cmd_windows,
+                cmd_linux,
                 check=True,
                 encoding='utf-8',
                 stdout=subprocess.DEVNULL,
